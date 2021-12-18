@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(92, 92, 167);
+  color: rgb(9, 9, 70);
+}
+
+.cor-sobrenome{
+  color: rgb(9, 9, 70);
+}
+
+.container {
+  display: flex;
+}
+
+.card-image {
+  padding: 40px 20px 100px 40px;
+  width: 30%;
+  text-align: center;
+}
+
+.card-info {
+  padding: 40px 40px 60px 20px;
+  width: 70%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.foto {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+button {
+  height: 40px;
+  width: 150px;
+  color: gray;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  margin-bottom: 10px;
+  padding-right: 100px;
+  height: 40px;
+  width: 400px;
+  border-radius: 7px;
+  border: none;
+}
+
+textarea {
+  margin-bottom: 10px;
+  padding-right: 100px;
+  height: 200px;
+  width: 400px;
+  resize: vertical;
+  border-radius: 7px;
+  border: none;
+  font-family: "Oswald", sans-serif;
+}
+
+label {
+  font-size: 15px;
+ 
+}
+
+#msgError {
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.redes-sociais i {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 50px;
+}
+
+h1{
+  color: white;
+}
+
+#meunome{
+  font-size: 70px;
+}

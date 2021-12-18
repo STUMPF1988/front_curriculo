@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Online</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
+<body>
+    <div class="container">
+
+        <div class="card-image">
+            <picture>
+                <img src="image/foto.jfif" alt="foto_perfil" class="foto">
+            </picture>
+
+            <br>
+            <br>
+            <br>
+
+
+            <h1 id="meunome">DANIELE <span class="cor-sobrenome">STUMPF</span></h1>
+
+            <hr>
+
+            <h2>SÃO LEOPOLDO/RS</h2>
+            <h2>FONE (51)99141-1248</h2>
+            <h2>E-MAIL stumpfdaniele@gmail.com</h2>
+
+            <hr>
+
+            <a class="redes-sociais" target="_blank" href="https://www.github.com/STUMPF1988"><i
+                    class="fab fa-github"></i></a>
+            <a class="redes-sociais" target="_blank" href="https://www.instagram.com/stumpfdaniele/"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="redes-sociais" target="_blank" href="https://www.linkedin.com/in/daniele-stumpf-152632209"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="card-info">
+            <h1>SOBRE</h1>
+            <h2>Tenho 33 anos, sou mãe da Virgínia, gosto de aprender, sou curiosa e amo a liberdade. Adoro tecnologia e
+                acredito que com ela, podemos mudar o mundo.</h2>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>FORMAÇÃO ACADÊMICA</h1>
+            <h2>BOOTCAMP EM DESENVOLVIMENTO WEB FULL STACK</h2>
+            <h3>Tecnologias trabalhadas: HTML, CSS, Bootstrap, JavaScript, NodeJs e React.</h3>
+            <h3>Instituição: Growdev Ltda</h3>
+            <h3>Início em 07/2021</h3>
+            <h3>Conclusão em 07/2022</h3>
+
+            <br>
+
+            <h2>MBA EM CONTROLADORIA E FINANÇAS</h2>
+            <h3>Universidade do Vale do Rio dos Sinos – UNISINOS</h3>
+            <h3>Concluído em 09/2018</h3>
+
+
+            <br>
+
+            <h2>GRADUAÇÃO EM CIÊNCIAS CONTÁBEIS</h2>
+            <h3>Universidade Luterana do Brasil – ULBRA</h3>
+            <h3>Concluído em 09/2011</h3>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1>EXPERIÊNCIA PROFISSIONAL</h1>
+            <h2>CLARO S/A</h2>
+            <h3>Porto Alegre-RS</h3>
+            <h3>Período: 04/2014 – 05/2017</h3>
+            <h3>Cargo: Analista Contábil Sênior</h3>
+
+            <br>
+
+            <h2>MELNICK EVEN DESENVOLVIMENTO IMOBILIÁRIO S/A</h2>
+            <h3>Porto Alegre-RS</h3>
+            <h3>Período: 09/2013 – 04/2014</h3>
+            <h3>Cargo: Analista Contábil Júnior</h3>
+
+            <br>
+
+            <h2>BETTANIN INDUSTRIAL S/A - GRUPO INBETTA</h2>
+            <h3>Esteio-RS</h3>
+            <h3>Período: 07/2010 – 04/2014</h3>
+            <h3>Cargo: Analista Contábil Júnior</h3>
+            <h3>Cargo: Assistente Contábil</h3>
+            <h3>Cargo: Auxiliar Contábil</h3>
+
+            <br>
+
+            <h2>AUTO PEÇAS PASSINI LTDA</h2>
+            <h3>São Leopoldo-RS</h3>
+            <h3>Período: 12/2007 – 05/2010</h3>
+            <h3>Cargo: Auxiliar Contábil</h3>
+            <h3>Cargo: Estagiária Contábil</h3>
+
+            <br>
+
+            <form action="cadastro">
+                <label for="mensagem">Se gostou do meu currículo, deixa teus dados que entrarei em contato!</label>
+                <br>
+                <br>
+                <input type="text" data-ls-module="charCounter" maxlength="20" id="nome" placeholder="Nome">
+
+
+                <input type="text" data-ls-module="charCounter" maxlength="11" id="telefone" placeholder="Telefone">
+
+                <input type="email" data-ls-module="charCounter" maxlength="40" id="email" placeholder="E-mail">
+
+                <textarea placeholder="Deixe aqui teu feedback sobre meu currículo!" data-ls-module="charCounter"
+                    maxlength="500" id="comentario"></textarea>
+
+            </form>
+
+            <button type="submit" onclick="Enviar()">Enviar</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+
+</body>
+
+</html>
