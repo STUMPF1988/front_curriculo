@@ -40,6 +40,7 @@ button {
   border-radius: 7px;
   border: none;
   cursor: pointer;
+
 }
 
 input {
@@ -64,6 +65,8 @@ textarea {
 
 label {
   font-size: 15px;
+  text-align: center;
+  color: white;
  
 }
 
@@ -85,8 +88,19 @@ label {
 
 h1{
   color: white;
+  font-size: 30px;
 }
 
 #meunome{
   font-size: 70px;
+}
+
+a{
+  font-size: 20px;
+  color: black;
+}
+
+#descricao{
+  font-size: 15x;
+  line-height: 2;
 }
