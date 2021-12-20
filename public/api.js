@@ -16,7 +16,7 @@ function EnviaCadastro() {
   }
 
   api
-    .post("/", {
+    .post("/cadastro", {
       nome,
       telefone,
       email,
@@ -47,7 +47,7 @@ function EnviaComentario() {
   }
 
   api
-    .post("/", {
+    .post("/comentario", {
       nome2,
       comentario,
     })
