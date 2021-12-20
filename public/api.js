@@ -3,6 +3,7 @@ const api = axios.create({
   baseURL: "https://api-curriculo-stumpf1988.herokuapp.com/",
 });
 
+
 //post cadastro
 function EnviaCadastro() {
   const nome = document.querySelector("#nome").value;
