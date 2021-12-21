@@ -1,7 +1,8 @@
 
 const api = axios.create({
-  baseURL: "https://api-curriculo-stumpf1988.herokuapp.com/",
+  baseURL: "https://api-curriculo-stumpf1988.herokuapp.com",
 });
+
 
 
 //post cadastro
@@ -25,7 +26,7 @@ function EnviaCadastro() {
     .then((result) => {
       const cadastro = result.data;
       cadastroList = cadastro;
-      window.location.href = "index.html";
+      window.location.href = "/";
     })
     .catch((err) => {
       alert(err);
@@ -55,7 +56,7 @@ function EnviaComentario() {
     .then((result) => {
       const coment = result.data;
       comentarioList = coment;
-      window.location.href = "index.html";
+      window.location.href = "/";
     })
     .catch((err) => {
       alert(err);
