@@ -3,7 +3,9 @@ const api = axios.create({
   baseURL: "https://api-curriculo-stumpf1988.herokuapp.com",
 });
 
-
+// const api = axios.create({
+//   baseURL: "https://localhost:8082",
+// });
 
 //post cadastro
 function EnviaCadastro() {
@@ -14,7 +16,7 @@ function EnviaCadastro() {
   if (nome == "" || telefone == "" || email == "") {
     alert("Informe todos os dados!");
   } else {
-    alert("Mensagem enviada com sucesso!");
+    alert("Obrigada por enviar teus dados! Em breve entrarei em contao!");
   }
 
   api
@@ -39,10 +41,10 @@ function EnviaCadastro() {
 
 //post comentario
 function EnviaComentario() {
-  const nome2 = document.querySelector("#nome2").value;
+  const nome = document.querySelector("#nome2").value;
   const comentario = document.querySelector("#comentario").value;
 
-  if (nome2 == "" || comentario == "") {
+  if (nome == "" || comentario == "") {
     alert("Informe todos os dados!");
   } else {
     alert("Mensagem enviada com sucesso!");
@@ -50,7 +52,7 @@ function EnviaComentario() {
 
   api
     .post("/comentario", {
-      nome2,
+      nome,
       comentario,
     })
     .then((result) => {
